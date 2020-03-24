@@ -1,6 +1,6 @@
 # Setup ext4 root filesystem
 
-debootstrap --arch=arm64 eoan /mnt
+debootstrap --arch=arm64 focal /mnt
 
 mount -o bind /proc /mnt/proc
 mount -o bind /dev /mnt/dev
@@ -19,14 +19,14 @@ echo "proc            /proc           proc    defaults          0       0
 
 echo "ubuntu-rpi64" >> /mnt/etc/hostname
 
-echo "deb http://ports.ubuntu.com/ubuntu-ports/ eoan main restricted universe multiverse 
-#deb-src http://ports.ubuntu.com/ubuntu-ports/ eoan main restricted universe multiverse 
+echo "deb http://ports.ubuntu.com/ubuntu-ports/ focal main restricted universe multiverse 
+#deb-src http://ports.ubuntu.com/ubuntu-ports/ focal main restricted universe multiverse 
 
-deb http://ports.ubuntu.com/ubuntu-ports/ eoan-security main restricted universe multiverse 
-#deb-src http://ports.ubuntu.com/ubuntu-ports/ eoan-security main restricted universe multiverse 
+deb http://ports.ubuntu.com/ubuntu-ports/ focal-security main restricted universe multiverse 
+#deb-src http://ports.ubuntu.com/ubuntu-ports/ focal-security main restricted universe multiverse 
 
-deb http://ports.ubuntu.com/ubuntu-ports/ eoan-updates main restricted universe multiverse 
-#deb-src http://ports.ubuntu.com/ubuntu-ports/ eoan-updates main restricted universe multiverse" >> /mnt/etc/apt/sources.list
+deb http://ports.ubuntu.com/ubuntu-ports/ focal-updates main restricted universe multiverse 
+#deb-src http://ports.ubuntu.com/ubuntu-ports/ focal-updates main restricted universe multiverse" >> /mnt/etc/apt/sources.list
 
 # Setup bootloader and overlays
 
