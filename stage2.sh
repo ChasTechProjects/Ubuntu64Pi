@@ -2,7 +2,7 @@
 
 apt update
 apt upgrade -y 
-apt install ubuntu-standard linux-raspi2
+apt install ubuntu-standard linux-raspi2 -y
 apt install wpasupplicant wireless-tools linux-firmware dhcpcd5 net-tools -y
 
 # Uncomment one of these to install a Desktop Environment
