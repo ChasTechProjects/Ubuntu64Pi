@@ -1,7 +1,4 @@
 # Ubuntu64Pi
-Semi-automated script that generates Ubuntu ARM64 images that can be ran on Raspberry Pi's with either the BCM2837 or BCM2711 SoC.
-
-# Ubuntu64Pi
 Ubuntu64Pi is based on <a href="https://github.com/ChasTechProjects/Debian64Pi">Debian64Pi</a>, a semi-automated script that generates Debian images using a third-party kernel compiled from the RPF source. This is because Debian does not have an official kernel for the Raspberry Pi yet. However, Ubuntu has its own kernel designed to run on Ubuntu and the Raspberry Pi which means it is therefore better to use Ubuntu's optimised kernel when building Ubuntu for the Raspberry Pi.
 
 Ubuntu64Pi takes my existing Debian64Pi script and removes the stages of installing the RPF-sourced kernel and replaces it with the Ubuntu one, as well as change the OS to Ubuntu 19.10 (Eoan Ermine) from Debian 10 (Buster). You can uncomment a desktop option in stage2 to set up a different flavour of Ubuntu, however this requires a larger image file and larger SD card to flash it on than a base, CLI Ubuntu system.
